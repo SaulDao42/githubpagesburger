@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Burger Co. | Premium Gourmet Burgers</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transition-navbar" id="mainNavbar">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <!-- Change with your logo -->
+                <img src="./imagenes/HAMBURGUESA 1200x709.avif" alt="Logo" width="45" height="45" class="brand-logo me-2">
+                <span id="brandName" class="fw-bold">Epic Burger Co.</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    
+                    <!-- Community Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="communityMenu" role="button" 
+                        data-bs-toggle="dropdown">Community</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="#about">Our Story</a></li>
+                            <li><a class="dropdown-item" href="#philosophy">Burger Philosophy</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO SECTION -->
+    <header id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal">
+            <h1 class="display-3 fw-bold text-white mb-4">Welcome to Epic Burger Co.</h1>
+            <p class="lead text-white mb-5 px-lg-5">Experience the ultimate handcrafted burgers in the city.</p>
+            <a href="#services" class="btn btn-success btn-lg px-5 me-3 shadow">Discover More</a>
+            <a href="#faq" class="btn btn-outline-light btn-lg px-5 shadow">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-5 reveal">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./imagenes/burger2.jpg" alt="Epic Burger" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <h6 class="text-success fw-bold text-uppercase">Our Story</h6>
+                    <h2 class="display-5 fw-bold mb-4">About Us</h2>
+                    <p class="lead text-muted">We are a passionate local business dedicated to offering the finest gourmet burgers, made with fresh, high-quality ingredients.</p>
+                    <ul class="list-unstyled mt-4 feature-list">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> 100% Premium handcrafted burgers.</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Outstanding customer service.</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> The ultimate dining experience awaits you.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-5 bg-light reveal">
+        <div class="container py-5 text-center">
+            <h6 class="text-success fw-bold text-uppercase">What We Offer</h6>
+            <h2 class="display-5 fw-bold mb-5">Our Services</h2>
+            <div class="row g-4">
+                
+                <!-- MENU CARD (Triggers Modal) -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm border-0" data-bs-toggle="modal" data-bs-target="#burgerModal">
+                        <div class="card-body p-5">
+                            <div class="icon-box mb-4"><i class="bi bi-fire"></i></div>
+                            <h4 class="card-title fw-bold">Exclusive Menu</h4>
+                            <p class="card-text text-muted">Click here to discover our mouth-watering signature burgers.</p>
+                            <span class="text-success fw-bold text-uppercase" style="font-size: 0.8rem;">Click to view</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUSTOMERS CARD -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm border-0">
+                        <div class="card-body p-5">
+                            <div class="icon-box mb-4"><i class="bi bi-emoji-smile"></i></div>
+                            <h4 class="card-title fw-bold">Happy Customers</h4>
+                            <p class="card-text text-muted">We prioritize your satisfaction with top-tier customer service in a welcoming environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOCATION CARD -->
+                <div class="col-md-4">
+                    <div class="card service-card h-100 shadow-sm border-0">
+                        <div class="card-body p-5">
+                            <div class="icon-box mb-4"><i class="bi bi-geo-alt"></i></div>
+                            <h4 class="card-title fw-bold">Prime Location</h4>
+                            <p class="card-text text-muted">Located in the heart of the city, perfect for a quick bite or a relaxed dinner.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-5 reveal">
+        <div class="container py-5 text-center">
+            <h6 class="text-success fw-bold text-uppercase">Our Best Moments</h6>
+            <h2 class="display-5 fw-bold mb-5">Activity Gallery</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="portfolio-item overflow-hidden rounded shadow">
+                        <img src="./imagenes/HAMBURGUESA 1200x709.avif" alt="Gallery Image 1" class="img-fluid portfolio-img">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item overflow-hidden rounded shadow">
+                        <img src="./imagenes/burger2.jpg" alt="Gallery Image 2" class="img-fluid portfolio-img">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item overflow-hidden rounded shadow">
+                        <img src="./imagenes/burger4.webp" alt="Gallery Image 3" class="img-fluid portfolio-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-5 bg-light reveal">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-success fw-bold text-uppercase">We've got answers</h6>
+                <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm" id="accordionFAQ">
+                        
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    How much does a burger cost?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    <strong>$3.50</strong> - Single Classic Burger<br>
+                                    <strong>$6.50</strong> - Premium Burger<br>
+                                    <strong>$10.00</strong> - Double Smash Burger<br>
+                                    <strong>$14.50</strong> - The Epic Triple Burger
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    What are your opening hours?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    We are open Monday through Sunday, starting at 6:00 PM until late.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted">
+                                    We accept all major Credit/Debit cards, Apple Pay, Google Pay, and Cash.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold text-success mb-4">Epic Burger Co.</h5>
+                    <p>The best gourmet burgers in town, crafted with passion and premium ingredients.</p>
+                </div>
+                
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+                    <p><a href="#home" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="#services" class="text-white text-decoration-none">Services</a></p>
+                    <p><a href="#gallery" class="text-white text-decoration-none">Gallery</a></p>
+                </div>
+                
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">Contact</h5>
+                    <p><i class="bi bi-geo-alt me-2"></i> 123 Flavor Street, Downtown</p>
+                    <p><i class="bi bi-envelope me-2"></i> contact@epicburgerco.com</p>
+                    <p><i class="bi bi-phone me-2"></i> +1 (555) 123-4567</p>
+                </div>
+                
+            </div>
+            <hr class="mb-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0 text-secondary">© 2026 All rights reserved: <strong class="text-success">Epic Burger Co.</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BURGER INFORMATION MODAL -->
+    <div class="modal fade" id="burgerModal" tabindex="-1" aria-labelledby="burgerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="burgerModalLabel">🍔 Our Signature Burgers</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <img src="./imagenes/HAMBURGUESA 1200x709.avif" alt="Epic Burger" class="img-fluid rounded shadow-sm h-100 object-fit-cover">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="fw-bold mb-3">Crafted to Perfection</h4>
+                            <p class="text-muted">Our burgers are made with 100% premium Angus beef, fresh organic vegetables, and artisanal buns baked daily. Each bite delivers a perfect balance of flavors and textures.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><strong>🧀 The Classic:</strong> Lettuce, tomato, onion, and our secret sauce.</li>
+                                <li class="mb-2"><strong>🥓 Cheese & Bacon:</strong> Double cheddar, caramelized onions, and crispy bacon.</li>
+                                <li class="mb-2"><strong>🌶️ Spicy Craze:</strong> Jalapeños, pepper jack cheese, and spicy mayo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                    <a href="#faq" class="btn btn-success rounded-pill px-4" data-bs-dismiss="modal">See Pricing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="index2.js"></script>
+</body>
+</html>
